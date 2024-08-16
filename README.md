@@ -13,4 +13,4 @@ C. We will try a different acquisition function, called Upper Confidence Bound (
            `𝑈𝐶𝐵(𝑥) = 𝑦)(𝑥) − 𝜅𝑠(𝑥)`
           
 
-
+![](assets/animation.gif)
