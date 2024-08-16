@@ -170,6 +170,9 @@ print(f"Best point found: x = {x_best}, f(x) = {y_best}")
 
 
 
+<img src="images/b1.png" width ="70%">
+
+
 ## Part C
 **To implement the Upper Confidence Bound (UCB) as an alternative acquisition function for Bayesian Optimization**, we'll follow these steps:
 - Define the UCB acquisition function.
