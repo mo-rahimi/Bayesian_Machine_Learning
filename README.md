@@ -1,7 +1,8 @@
 # Bayesian Machine Learning:
-- `(Gaussian Process regression, Bayesian optimization)`
+- `(Gaussian Process Regression, Bayesian Optimization)`
   
-This repository is created  for different ML topics, such as Graph ML, Bayesian ML, and etc. for those who are interested to learn these topics. 
+This repository contains materials for learning various machine learning topics, such as Graph ML, Bayesian ML, and others, for those interested in these areas. It includes code examples, tutorials, and resources to help you understand and apply these techniques.
+
 
 ## Project Overview:
 
@@ -161,7 +162,10 @@ print(f"Best point found: x = {x_best}, f(x) = {y_best}")
 
 <img src="images/b1 .png" width ="90%">
 <img src="images/b2 .png" width ="90%">
-**Best point found:** `x = 0.07945589117823564, f(x) = -1.1501710270005965`
+
+**Best point found:** 
+
+- `x = 0.07945589117823564, f(x) = -1.1501710270005965`
 
 
 ## Part C
@@ -184,5 +188,12 @@ To implement the Upper Confidence Bound (UCB) acquisition function, I'll follow 
 <img src="images/c3.png" width ="90%">
 
 ### Conclusion
-  Based on the results, the `diminishing k (k = 4/n) worked best` for the optimization of the function. In the first two experiments with k = 0.5 and k = 3, the optimizer got stuck at a single point and did not explore more. However, with the diminishing k, the optimizer was able to explore more points and found the best point at x = 0.9382691345672836 with f(x) = -1.308613809062413.
-Comparing this to the Expected Improvement (EI) results from part (b), the best point found using EI was x = 0.9661932386477294 with f(x) = -1.4890696850503946. The performance of the UCB with diminishing k is very close to the performance of EI, but the EI slightly was better than UCB in this case, but if I try another value of k, UCB might gives better result.
+
+The results demonstrate that using a `diminishing value of ( k )` (specifically ( k = 4/n )) optimized the function effectively. 
+
+In initial experiments with` ( k = 0.5 ) and ( k = 3 )`, the optimizer became `stuck at a single point`, limiting exploration. However, with the diminishing ( k ), the optimizer successfully explored more points, identifying the optimal point at ( x = 0.9382691345672836 ) with ( f(x) = -1.308613809062413 ).
+
+Comparatively, the `Expected Improvement (EI)` method found the `best point at ( x = 0.9661932386477294 ) with ( f(x) = -1.4890696850503946 )`.
+
+The performance of the `Upper Confidence Bound (UCB)` with diminishing ( k ) closely matched that of EI, although EI performed slightly better in this instance. Future experiments with different values of ( k ) may yield improved results for UCB.
+
