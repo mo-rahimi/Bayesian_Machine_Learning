@@ -78,6 +78,8 @@ for i in range(len(x_plot)):
 
 imageio.mimsave('animation.gif', images, duration=33.3, loop=0)
 ```
+
+<img src="images/temp_plot.png" width ="40%">
 ## Part B
 
 ```python
@@ -156,21 +158,10 @@ while iteration < iteration_max:
 print(f"Best point found: x = {x_best}, f(x) = {y_best}")
 ```
 
-`1 0.17043408681736347 -0.06550784312569946`
 
-`2 0.06409281856371274 -1.1041681612899061`
-
-` 8 0.07945589117823564 -1.1501710270005965`
-
-` 9 0.07945589117823564 -1.1501710270005965`
-
-`10 0.07945589117823564 -1.1501710270005965`
-
+<img src="images/b1 .png" width ="90%">
+<img src="images/b2 .png" width ="90%">
 **Best point found:** `x = 0.07945589117823564, f(x) = -1.1501710270005965`
-
-
-
-<img src="images/b1.png" width ="70%">
 
 
 ## Part C
@@ -187,7 +178,10 @@ To implement the Upper Confidence Bound (UCB) acquisition function, I'll follow 
 - Define a function upper_confidence_bound that takes x, y_pred, std_dev, and k as inputs and calculates the UCB value.
 - Modify the maximize_acquisition_function to accept an additional parameter k and use the UCB function instead of the Expected Improvement function.
 - Perform Bayesian optimization using the `UCB acquisition function` for the three experiments with different values of `k`.
-
+- 
+<img src="images/c1.png" width ="90%">
+<img src="images/c2.png" width ="90%">
+<img src="images/c3.png" width ="90%">
 
 ### Conclusion
   Based on the results, the `diminishing k (k = 4/n) worked best` for the optimization of the function. In the first two experiments with k = 0.5 and k = 3, the optimizer got stuck at a single point and did not explore more. However, with the diminishing k, the optimizer was able to explore more points and found the best point at x = 0.9382691345672836 with f(x) = -1.308613809062413.
