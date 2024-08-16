@@ -16,6 +16,7 @@ C. We will try a different acquisition function, called **Upper Confidence Bound
            `𝑈𝐶𝐵(𝑥) = 𝑦)(𝑥) − 𝜅𝑠(𝑥)`
           
 
+<img src="GIF/animation.gif" width="800" height="500"/>
 
-
-<img src="GIF/animation.gif" width="800" height="400"/>
+### Part A:
+```python
