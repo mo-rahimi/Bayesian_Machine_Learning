@@ -1,5 +1,6 @@
 # Bayesian Machine Learning:
 - `(Gaussian Process regression, Bayesian optimization)`
+  
 This repository is created  for different ML topics, such as Graph ML, Bayesian ML, and etc. for those who are interested to learn these topics. 
 
 ## Project Overview:
@@ -10,10 +11,12 @@ A. Then we use this sampled data to train a `Gaussian Process regression model`,
 
 B. Then we try to optimize the function using Bayesian optimization:
 
-C. We will try a different acquisition function, called Upper Confidence Bound (UCB), to use within Bayesian optimization and to minimize the function. 
+C. We will try a different acquisition function, called **Upper Confidence Bound (UCB)**, to use within Bayesian optimization and to minimize the function. 
 - UCB is defined as:
            `𝑈𝐶𝐵(𝑥) = 𝑦)(𝑥) − 𝜅𝑠(𝑥)`
           
 
-![](Bayesian_ML/animation.gif)
+<img src="GIF/animation.gif" width="800" height="500"/>
 
+### Part A:
+```python
