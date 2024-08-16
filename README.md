@@ -1,10 +1,9 @@
-# Machine-Learning-2019
-This repository is created  for different ML topics, such as Graph ML, Bayesian ML, and ... for any one interested to learn these topics. 
-Crrently you can find topic related to Bayesian ML and classification nd clustreing in this repo.
-you can find related information and the list of content in each corresponding folder.
+# Bayesian Machine Learning:
+- `(Gaussian Process regression, Bayesian optimization)`
+This repository is created  for different ML topics, such as Graph ML, Bayesian ML, and etc. for those who are interested to learn these topics. 
 
-## List of projects:
-**1. Bayesian Machine Learning:**(Gaussian Process regression, Bayesian optimization)
+## Project Overview:
+
 We can start with a function and sample that at FOUR equally spaced points between its lower and upper bounds (the two bounds should be included in the four sampled points).
 
 A. Then we use this sampled data to train a `Gaussian Process regression model`, by using `RBF kernel`.
@@ -17,3 +16,4 @@ C. We will try a different acquisition function, called Upper Confidence Bound (
           
 
 ![](Bayesian_ML/animation.gif)
+
